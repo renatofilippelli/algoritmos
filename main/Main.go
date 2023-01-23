@@ -9,15 +9,17 @@ import (
 func main() {
 	entrada := []int{2, 3, 4, 55, 6, 7}
 	esperado := 62
-	fmt.Println(calc(entrada, esperado, true))
+	//return false
+	fmt.Println(calc(entrada, esperado))
 
 	entrada = []int{2, 3, 4, 55, 6, 7}
 	esperado = 12
-	fmt.Println(calc(entrada, esperado, true))
+	//return false
+	fmt.Println(calc(entrada, esperado))
 
 }
 
-func calc(entrada []int, esperado int, b bool) bool {
+func calc(entrada []int, esperado int) bool {
 
 	//array int para string pura
 	entradaTexto := strings.Trim(strings.Replace(fmt.Sprint(entrada), " ", " ", -1), "[]")
